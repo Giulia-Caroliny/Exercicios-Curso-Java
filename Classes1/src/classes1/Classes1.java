@@ -7,13 +7,15 @@ package classes1;
 import java.util.Scanner;
 
 /**
- *
+ * 
  * @author giuli
  */
 public class Classes1 {
 
     /**
-     * @param args the command line arguments
+     * 
+     * @param args 
+     * @see Retangulo
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
