@@ -36,7 +36,7 @@ public class Retangulo {
     }
 
     /**
-     * Método set do atriburo largura
+     * Método set do atributo largura
      *
      * @param largura double - largura a ser atribuida
      */
@@ -54,7 +54,7 @@ public class Retangulo {
     }
 
     /**
-     * Método set do atriburo altura
+     * Método set do atributo altura
      *
      * @param altura double - altura a ser atribuida
      */
