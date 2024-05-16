@@ -4,6 +4,9 @@
  */
 package herancaepolimorfismo;
 
+import entidades.ProdutoUsado;
+import entidades.ProdutoImportado;
+import entidades.Produto;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -18,6 +21,10 @@ public class HerancaEPolimorfismo {
 
     /**
      * @param args the command line arguments
+     * @see Produto
+     * @see ProdutoImportado
+     * @see ProdutoUsado
+     * 
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
