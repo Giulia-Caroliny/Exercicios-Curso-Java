@@ -8,6 +8,7 @@ import enumeracoes.entidades.Cliente;
 import enumeracoes.entidades.Pedido;
 import enumeracoes.entidades.PedidoItem;
 import enumeracoes.entidades.Produto;
+import enumeracoes.enums.Status;
 import java.util.Date;
 import java.util.Scanner;
 
@@ -19,6 +20,11 @@ public class Enumeracoes {
 
     /**
      * @param args the command line arguments
+     * @see Cliente
+     * @see Pedido
+     * @see PedidoItem
+     * @see Produto
+     * @see Status
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
