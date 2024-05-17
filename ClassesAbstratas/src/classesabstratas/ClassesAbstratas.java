@@ -19,6 +19,9 @@ public class ClassesAbstratas {
 
     /**
      * @param args the command line arguments
+     * @see Contribuintes
+     * @see PessoaFisica
+     * @see PessoaJuridica
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

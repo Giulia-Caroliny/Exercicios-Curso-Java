@@ -12,26 +12,47 @@ public class PessoaFisica extends Contribuintes {
 
     private Double gastosSaude;
 
+    /**
+     * Construtor sobrecarregado sem parâmetros
+     */
     public PessoaFisica() {
     }
 
-    public PessoaFisica(Double gastosSaude) {
-        this.gastosSaude = gastosSaude;
-    }
-
+    /**
+     * Construtor sobrecarregado - Parâmetros: Double, String e Double
+     *
+     * @param gastosSaude Double - gastos despreendidos para a saúde
+     * @param nome String - nome do contribuinte
+     * @param renda Double - renda do contribuinte
+     */
     public PessoaFisica(Double gastosSaude, String nome, Double renda) {
         super(nome, renda);
         this.gastosSaude = gastosSaude;
     }
 
+    /**
+     * Método get do atributo gastosSaúde
+     *
+     * @return Double - gastos despreendidos para a saúde
+     */
     public Double getGastosSaude() {
         return gastosSaude;
     }
 
+    /**
+     * Método ser do atributo gastosSaúde
+     *
+     * @param gastosSaude Double - gastos a serem atribuidos
+     */
     public void setGastosSaude(Double gastosSaude) {
         this.gastosSaude = gastosSaude;
     }
 
+    /**
+     * Método sobrescrito - calcular imposto pago
+     *
+     * @return Double - imposto pago pelo contribuinte
+     */
     @Override
     public Double imposto() {
         if (super.getRenda() < 20000) {
