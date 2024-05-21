@@ -10,6 +10,7 @@ import java.util.Scanner;
 import programa.entidades.Contrato;
 import programa.entidades.Parcelas;
 import programa.servicos.ContratoServico;
+import programa.servicos.PagamentosOnlineServicos;
 import programa.servicos.PayPalService;
 
 /**
@@ -20,11 +21,17 @@ public class Programa {
 
     /**
      * @param args the command line arguments
+     * @see Contrato
+     * @see ContratoServico
+     * @see Parcelas
+     * @see PagamentosOnlineServicos
+     * @see PayPalService
+     *
      */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-                
+
         System.out.println("Entre com os dados do contrato:");
         System.out.print("Número: ");
         int num = sc.nextInt();
@@ -35,12 +42,12 @@ public class Programa {
         double valor = sc.nextDouble();
         System.out.print("Número de parcelas: ");
         int parcelas = sc.nextInt();
-        
+
         Contrato contrato = new Contrato(num, dia, valor);
         ContratoServico cs = new ContratoServico(new PayPalService());
-        
+
         cs.processarContrato(contrato, parcelas);
-        
+
         System.out.println("Parcelas: ");
         contrato.getParcelas().forEach(System.out::println);
     }

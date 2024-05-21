@@ -11,15 +11,29 @@ import programa.entidades.Parcelas;
 /**
  *
  * @author giuli
+ * @see PagamentosOnlineServicos
+ * @see Contrato
  */
 public class ContratoServico {
-    
+
     private PagamentosOnlineServicos servicos;
 
+    /**
+     * Construtor - Parâmetros: PagamentosOnlineServicos
+     *
+     * @param servicos PagamentosOnlineServicos - interface para serviços de
+     * pagamentos online
+     */
     public ContratoServico(PagamentosOnlineServicos servicos) {
         this.servicos = servicos;
     }
 
+    /**
+     * Método para processar o contrato calculando suas parcelas
+     *
+     * @param contrato Contrato - contrato a ser processado
+     * @param numParcelas int - número de parcelas a serem criadas
+     */
     public void processarContrato(Contrato contrato, Integer numParcelas) {
 
         for (int i = 1; i <= numParcelas; i++) {
