@@ -10,6 +10,10 @@ package exceptions;
  */
 public class ContaException extends RuntimeException{
 
+    /**
+     * Construtor
+     * @param message String - mensagem de erro
+     */
     public ContaException(String message) {
         super(message);
     }
