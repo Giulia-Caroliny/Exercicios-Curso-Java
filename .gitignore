@@ -53,3 +53,7 @@ replay_pid*
 /Arquivos/build/
 /interfaces/dist/
 /TratamentoExcecoes/dist/
+/JavaApplication50/nbproject/private/
+/DAOFactory
+/set/nbproject/private/
+/set/build/
